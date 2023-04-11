@@ -69,6 +69,8 @@ i{
     flex-direction: column;
     position: relative;
     padding: 0 10px 0 10px;
+    text-decoration: none
+
 }
 .input{
     height: 45px;
@@ -86,6 +88,7 @@ i{
     left: 10px;
     pointer-events: none;
     transition: .5s;
+     
 }
 .input-field .input:focus ~ label{
     top: -10px;
@@ -148,4 +151,8 @@ span a:hover{
         max-width: 420px;
         width: 100%;
     }
+}
+.contest{
+    text-decoration: none;
+    color: #474545; 
 }
