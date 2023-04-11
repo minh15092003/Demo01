@@ -25,17 +25,17 @@
     transform: scaleX(1);
 }
 
-        .utils__content {
+.utils__content {
             padding: 15px 20px;
             overflow-x: hidden;
             width: 100%;
-        }
+}
     
-    .utils__content {
+.utils__content {
         height: 100%!important;
         display: flex;
         flex-direction: column;
-    }
+}
    
 .form-control, .btn-outline-success{
     margin-top: 60px;
@@ -72,4 +72,3 @@
 ion-icon {
     font-size: 50px;
   }
-  
