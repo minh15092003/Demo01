@@ -1,4 +1,4 @@
-.nav-item .nav-link{
+.nav-item .nav-link {
     position: relative;
     font-size: 1.1em;
     color: rgb(65, 62, 59);
@@ -6,7 +6,8 @@
     font-weight: 500;
     margin-left: 50px;
 }
-.nav-item .nav-link::after{
+
+.nav-item .nav-link::after {
     content: 'ss';
     position: absolute;
     left: 0;
@@ -15,36 +16,40 @@
     height: 3px;
     background: #962f2f;
     border-radius: 5px;
-    transform-origin:right ;
+    transform-origin: right;
     transform: scaleX(0);
     transition: transform .5s;
 }
-.nav-item .nav-link:hover::after{
+
+.nav-item .nav-link:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
 
 .utils__content {
-            padding: 15px 20px;
-            overflow-x: hidden;
-            width: 100%;
+    padding: 15px 20px;
+    overflow-x: hidden;
+    width: 100%;
 }
-    
+
 .utils__content {
-        height: 100%!important;
-        display: flex;
-        flex-direction: column;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
 }
-   
-.form-control, .btn-outline-success{
+
+.form-control,
+.btn-outline-success {
     margin-top: 60px;
 }
-.btn-group{
+
+.btn-group {
     margin-left: 80%;
     margin-top: 30px;
 }
 
-.btn-export, .btn-import {
+.btn-export,
+.btn-import {
     margin-left: 10px;
     margin-top: -100px;
     border: none;
@@ -58,25 +63,30 @@
 }
 
 
-.btn-import:hover, .btn-export:hover{
-        background: rgba(103, 247, 151, 0.9);
-    }
+.btn-import:hover,
+.btn-export:hover {
+    background: rgba(103, 247, 151, 0.9);
+}
 
-.nav-link{
+.nav-link {
     margin-left: 30px;
 }
-.lable{
+
+.lable {
     margin: 20px;
 }
+
 ion-icon {
     font-size: 50px;
-  }
-  *{
+}
+
+* {
     margin: 0;
     padding: 0;
 }
+
 /* navbar top */
-.navbar-top{
+.navbar-top {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -84,85 +94,86 @@ ion-icon {
     text-align: center;
     justify-content: space-between;
 }
-.social-link i img{
+
+.social-link i img {
     margin-left: 10px;
     transition: 0.5s ease;
     cursor: pointer;
 }
-.social-link i img:hover{
-    background-color: rgba(238,224,208);
+
+.social-link i img:hover {
+    background-color: rgba(238, 224, 208);
     border-radius: 50px;
 }
-@media screen and (max-width:420px){
-    .social-link i img{
+
+@media screen and (max-width:420px) {
+    .social-link i img {
         width: 20px;
     }
 }
-.logo h3{
+
+.logo h3 {
     font-weight: bold;
 }
-@media screen and (max-width:420px){
-    .logo h3{
+
+@media screen and (max-width:420px) {
+    .logo h3 {
         font-size: 20px;
     }
 }
-.icons i img{
+
+.icons i img {
     margin-left: 10px;
     cursor: pointer;
 }
-@media screen and (max-width:420px){
-    .icons i img{
+
+@media screen and (max-width:420px) {
+    .icons i img {
         width: 20px;
     }
 }
- 
+
 
 /* main content */
-.main-content{
+.main-content {
     width: 100%;
-<<<<<<< HEAD
     height: 90vh;
-=======
->>>>>>> 8d562ff5a3667f9f237bb439ac9a2ef66cd3ebcf
     background-image: url(/Img/20160406163621-anhminhhoa-2.jpg);
     background-size: cover;
     background-position: 70%;
 }
 
 /* navbar */
-#navbar-color{
-    background-color: rgba(238,224,208);
+#navbar-color {
+    background-color: rgba(238, 224, 208);
 }
-.navbar-nav{
+
+.navbar-nav {
     margin: auto;
 }
-.nav-link{
+
+.nav-link {
     margin-left: 30px;
     font-weight: bold;
     color: black;
     transition: 0.5s ease;
     cursor: pointer;
 }
-<<<<<<< HEAD
- 
- 
- 
-=======
 
 .nav-link:hover {
     background-color: rgb(149, 216, 233);
-
 }
 
 .content {
->>>>>>> 8d562ff5a3667f9f237bb439ac9a2ef66cd3ebcf
     margin-top: 150px;
     margin-left: 60px;
 }
-.content h1{
+
+.content h1 {
     font-size: 50px;
 }
-#btn1 button{
+
+#btn1 button {
     width: 150px;
     height: 32px;
     background: transparent;
@@ -172,20 +183,23 @@ ion-icon {
     transition: 0.5s ease;
     cursor: pointer;
 }
-#btn1 button:hover{
+
+#btn1 button:hover {
     background-color: green;
 }
-@media screen and (max-width:420px){
-    .content h1{
+
+@media screen and (max-width:420px) {
+    .content h1 {
         font-size: 30px;
     }
 }
+
 /* content */
 
 /* main content */
 
 /* card1 */
-#btn2 button{
+#btn2 button {
     width: 100px;
     height: 30px;
     background: transparent;
@@ -193,30 +207,36 @@ ion-icon {
     transition: 0.5s ease;
     cursor: pointer;
 }
-#btn2 button:hover{
-    background-color: rgba(238,224,208);
+
+#btn2 button:hover {
+    background-color: rgba(238, 224, 208);
 }
+
 /* card1 */
 
 /* card2 */
-#tpc{
+#tpc {
     box-shadow: 0 0 5px black;
     transition: 0.5s ease;
     cursor: pointer;
 }
-#tpc:hover{
+
+#tpc:hover {
     transform: translateY(-10px);
 }
+
 /* card2 */
 
 /* card3 */
-#c p{
+#c p {
     font-weight: bold;
 }
-#btn3{
+
+#btn3 {
     text-align: center;
 }
-#btn3 button{
+
+#btn3 button {
     width: 150px;
     height: 30px;
     background: transparent;
@@ -224,16 +244,19 @@ ion-icon {
     transition: 0.5s ease;
     cursor: pointer;
 }
-#btn3 button:hover{
-    background-color: rgba(238,224,208);
+
+#btn3 button:hover {
+    background-color: rgba(238, 224, 208);
 }
-@media screen and (max-width:895px){
-    #btn3 button{
+
+@media screen and (max-width:895px) {
+    #btn3 button {
         width: 100px;
     }
 }
+
 /* card3 */
-#btn4 button{
+#btn4 button {
     width: 150px;
     height: 30px;
     background: transparent;
@@ -241,40 +264,50 @@ ion-icon {
     transition: 0.5s ease;
     cursor: pointer;
 }
-#btn4 button:hover{
-    background-color: rgba(238,224,208);
+
+#btn4 button:hover {
+    background-color: rgba(238, 224, 208);
 }
+
 /* footer */
-#footer{
+#footer {
     width: 100%;
     background-color: black;
     margin-top: 100px;
 }
-#footer h1{
+
+#footer h1 {
     color: white;
     padding-top: 30px;
 }
-#footer p{
+
+#footer p {
     color: white;
 }
-.icons i{
-    color: rgba(238,224,208);
+
+.icons i {
+    color: rgba(238, 224, 208);
     font-size: 30px;
     cursor: pointer;
 }
-.copyright{
+
+.copyright {
     color: white;
     margin-top: 20px;
 }
-.credite{
+
+.credite {
     color: white;
 }
-#cd-contens{
+
+#cd-contens {
     height: 265px;
 }
- #navbarNavDropdown{
+
+#navbarNavDropdown {
     margin-left: -10%;
- }
- #navbar-toggler-icon{
+}
+
+#navbar-toggler-icon {
     color: #962f2f;
- }
+}
