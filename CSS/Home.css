@@ -120,7 +120,10 @@ ion-icon {
 /* main content */
 .main-content{
     width: 100%;
+<<<<<<< HEAD
     height: 90vh;
+=======
+>>>>>>> 8d562ff5a3667f9f237bb439ac9a2ef66cd3ebcf
     background-image: url(/Img/20160406163621-anhminhhoa-2.jpg);
     background-size: cover;
     background-position: 70%;
@@ -140,9 +143,19 @@ ion-icon {
     transition: 0.5s ease;
     cursor: pointer;
 }
+<<<<<<< HEAD
  
  
-.content{
+ 
+=======
+
+.nav-link:hover {
+    background-color: rgb(149, 216, 233);
+
+}
+
+.content {
+>>>>>>> 8d562ff5a3667f9f237bb439ac9a2ef66cd3ebcf
     margin-top: 150px;
     margin-left: 60px;
 }
