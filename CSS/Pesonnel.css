@@ -1,6 +1,6 @@
 .nav-item .nav-link{
     position: relative;
-    font-size: 1.1em;
+    font-size: 0.8em;
     color: antiquewhite;
     text-decoration: none;
     font-weight: 500;
@@ -69,5 +69,6 @@
     margin: 20px;
 }
 ion-icon {
-    font-size: 50px;
+    font-size:30px;
+    margin-left: -10%;
   }
