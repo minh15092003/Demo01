@@ -56,12 +56,14 @@
 
                     </ul>
                 </div>
-                <ion-icon name="person-circle-outline"> </ion-icon>
+                <ion-icon name="person-circle-outline" aria-expanded="false"> </ion-icon>
+
 
             </div>
         </nav>
 
     </div>
+
     <div class="">
         <div class="utils__content">
             <div class="lable">
@@ -87,17 +89,16 @@
                     <li><a class="dropdown-item" href="#">Thêm file excel</a></li>
                 </ul>
             </div>
-
-            <div>
-                <nav class="navbar navbar-light ">
-                    <div class="container-fluid">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                        <button class="btn btn-outline-success" type="submit">Sửa</button>
-                    </div>
-                </nav>
+            <nav class="navbar navbar-light ">
+                <div class="container-fluid">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <button class="btn btn-outline-success" type="submit">Sửa</button>
+                </div>
+            </nav>
+            <div style="overflow-x:auto">
                 <table class="table">
                     <thead>
                         <tr>
@@ -165,6 +166,7 @@
                 </table>
             </div>
         </div>
+    </div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>

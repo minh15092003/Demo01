@@ -1,0 +1,72 @@
+.nav-item .nav-link{
+    position: relative;
+    font-size: 1em;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0px;
+}
+.nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #2581b6;
+    border-radius: 5px;
+    transform-origin:right ;
+    transform: scaleX(0);
+    transition: transform .5s;  
+}
+.nav-item .nav-link:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+ion-icon {
+    font-size: 50px;
+  }
+.employee-detail__wrapper-item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f7ff;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 30px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+     /* overflow-y: scroll;
+    white-space: nowrap; */
+    
+}
+.employee-detail__wrapper-item .employee-detail__item {
+    width: 25%;
+    padding: 10px 10px 10px 0;
+}
+.avt-left{
+    margin-left: 80px;
+    border-radius: 20px;
+width:150px;
+ height:150px;
+}
+@media (min-width: 280px) and (max-width: 800px) {
+    .avt-left{
+        width:70px;
+ height:70px;
+  margin-left: 30px;
+  border-radius: 8px;
+  
+    } 
+  }
+.lable-text{
+   
+    margin: 30px 50px;
+}
+.nav-text{
+    margin: -130px 300px 90px;
+}
+@media (min-width: 200px) and (max-width: 800px) {
+    .nav-text{ 
+    margin: -70px 120px 20px;
+    }
+}
