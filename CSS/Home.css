@@ -8,7 +8,7 @@
 }
 
 .nav-item .nav-link::after {
-    content: 'ss';
+    content: '';
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -160,10 +160,7 @@ ion-icon {
     cursor: pointer;
 }
 
-.nav-link:hover {
-    background-color: rgb(149, 216, 233);
-}
-
+ 
 .content {
     margin-top: 150px;
     margin-left: 60px;
@@ -308,6 +305,9 @@ ion-icon {
     margin-left: -10%;
 }
 
-#navbar-toggler-icon {
-    color: #962f2f;
-}
+ 
+ #cutsten{
+   background-color: rgb(247, 247, 247);
+ }
+ 
+ 
