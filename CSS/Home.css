@@ -164,6 +164,7 @@ ion-icon {
     background-color: rgb(149, 216, 233);
 }
 
+ 
 .content {
     margin-top: 150px;
     margin-left: 60px;
@@ -308,10 +309,9 @@ ion-icon {
     margin-left: -10%;
 }
 
-#navbar-toggler-icon {
-    color: #962f2f;
-}
-#cutsten{
-    background-color: rgb(247, 247, 247);
-  }
-  
+ 
+ #cutsten{
+   background-color: rgb(247, 247, 247);
+ }
+ 
+ 
