@@ -58,10 +58,7 @@ width:150px;
   
     } 
   }
-.lable-text{
-   
-    margin: 30px 50px;
-}
+ 
 .nav-text{
     margin: -130px 300px 90px;
 }
@@ -71,5 +68,9 @@ width:150px;
     }
 }
 .fust-tunst{
+    margin-left: 15px;
+}
+.gesten-cost{
+   margin-top: 20px;
     margin-left: 15px;
 }

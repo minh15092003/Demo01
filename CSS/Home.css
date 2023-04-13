@@ -46,6 +46,7 @@
 .btn-group {
     margin-left: 80%;
 }
+
 .btn-export,
 .btn-import {
     margin-left: 10px;
@@ -56,20 +57,25 @@
     background: rgb(245, 247, 244);
     border-radius: 20px;
 }
+
 .btn-import:hover,
 .btn-export:hover {
     background: rgba(103, 247, 151, 0.9);
 }
+
 .nav-link {
     margin-left: 30px;
 }
+
 .lable {
 
     margin: 20px;
 }
+
 .dropdown {
     margin-left: 80%;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -99,49 +105,67 @@
 .logo h3 {
     font-weight: bold;
 }
+#name {
+    margin-left: -90px;
+     left: 93%;
+     margin-top: 3px;
+ }
 /*Ipad ngang(1024 x 768)*/
 @media screen and (max-width: 1024px) {
     .social-link i img {
         width: 20px;
     }
-     
+    #name {
+       margin-left: -70px;
+       
+        margin-top: 3px;
+    }
+
 }
+
 .icons i img {
     margin-left: 10px;
     cursor: pointer;
 }
+
 #btn3 button {
     width: 50px;
 }
+
 /*Ipad dọc(768 x 1024)*/
 @media screen and (max-width: 768px) {
     .icons i img {
         width: 20px;
         text-align: center;
     }
+
 }
+
 /*Tablet nhỏ(480 x 640)*/
 @media screen and (max-width: 480px) {
     .content h1 {
         font-size: 30px;
     }
+
     #btn3 button {
         width: 70px;
     }
-  
 }
-/*Iphone(480 x 640)*/
-@media screen and (max-width: 320px) {
 
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 280px) {
+    
 }
 
 /*Smart phone nhỏ*/
 @media screen and (max-width: 240px) {
-    .cuerta-rt{
+    .cuerta-rt {
         width: 50px;
         margin-left: 200px;
     }
 }
+
+
 /* main content */
 .main-content {
     width: 100%;
@@ -314,10 +338,13 @@
 
 #cutsten {
     background-color: rgb(247, 247, 247);
-
 }
 
-#cd-contens{
+#cd-contens {
     height: 30vh;
-    }
- 
+}
+
+.dsadasd li {
+    top: 80px;
+    left: 1014px;
+}
