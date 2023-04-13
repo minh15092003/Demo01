@@ -49,7 +49,7 @@ ion-icon {
 width:150px;
  height:150px;
 }
-@media (min-width: 280px) and (max-width: 800px) {
+@media (min-width: 250px) and (max-width: 800px) {
     .avt-left{
         width:70px;
  height:70px;
@@ -65,7 +65,7 @@ width:150px;
 .nav-text{
     margin: -130px 300px 90px;
 }
-@media (min-width: 200px) and (max-width: 800px) {
+@media (min-width: 100px) and (max-width: 800px) {
     .nav-text{ 
     margin: -70px 120px 20px;
     }

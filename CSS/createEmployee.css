@@ -1,12 +1,4 @@
 
- /* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap'); */
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
 #row{
     background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20210605/pngtree-lake-view-desktop-wallpaper-image_725260.jpg");
   padding: 0 10px;
@@ -31,11 +23,8 @@
   text-align: center;
 }
 
-.wrapper .form{
-  width: 100%;
-}
 
-.wrapper .form .inputfield{
+.inputfield{
   margin-bottom: 15px;
   display: flex;
   align-items: center;
@@ -59,19 +48,19 @@
   transition: all 0.3s ease;
 }
 
-.wrapper .form .inputfield .textarea{
+/* .wrapper .form .inputfield .textarea{
   width: 100%;
   height: 125px;
   resize: none;
-}
+} */
 
-.wrapper .form .inputfield .custom_select{
+.custom_select{
   position: relative;
   width: 100%;
   height: 37px;
 }
 
-.wrapper .form .inputfield .custom_select:before{
+ .custom_select:before{
   content: "";
   position: absolute;
   top: 12px;
@@ -81,7 +70,7 @@
   pointer-events: none;
 }
 
-.wrapper .form .inputfield .custom_select select{
+ .custom_select select{
   -webkit-appearance: none;
   -moz-appearance:   none;
   appearance:        none;
@@ -102,31 +91,31 @@
   border: 1px solid #fec107;
 }
 
-.wrapper .form .inputfield p{
+/* .wrapper .form .inputfield p{
    font-size: 14px;
    color: #757575;
-}
-.wrapper .form .inputfield .check{
+} */
+/* .wrapper .form .inputfield .check{
   width: 15px;
   height: 15px;
   position: relative;
   display: block;
   cursor: pointer;
-}
-.wrapper .form .inputfield .check input[type="checkbox"]{
+} */
+/* .wrapper .form .inputfield .check input[type="checkbox"]{
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-}
-.wrapper .form .inputfield .check .checkmark{
+} */
+/* .wrapper .form .inputfield .check .checkmark{
   width: 15px;
   height: 15px;
   border: 1px solid #fec107;
   display: block;
   position: relative;
-}
-.wrapper .form .inputfield .check .checkmark:before{
+} */
+/* .wrapper .form .inputfield .check .checkmark:before{
   content: "";
   position: absolute;
   top: 1px;
@@ -137,16 +126,16 @@
   border-color: transparent transparent #fff #fff;
   transform: rotate(-45deg);
   display: none;
-}
-.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+} */
+/* .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
   background: #2d6f74;
-}
+} */
 
-.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+/* .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
   display: block;
-}
+} */
 
-.wrapper .form .inputfield .btn{
+ .btn{
   width: 100%;
    padding: 8px 10px;
   font-size: 15px; 
@@ -158,13 +147,13 @@
   outline: none;
 }
 
-.wrapper .form .inputfield .btn:hover{
+ .btn:hover{
   background: #ffd658;
 }
 
-.wrapper .form .inputfield:last-child{
+/* .wrapper .form .inputfield:last-child{
   margin-bottom: 0;
-}
+} */
 
 @media (max-width:420px) {
   .wrapper .form .inputfield{
