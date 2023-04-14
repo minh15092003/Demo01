@@ -275,7 +275,9 @@ table {
     border: 1px solid #d5dbd9;
     border-radius: 3px;
   }
-  
+  .cosstunsst{
+    margin-top: -98px;
+  }
 
   /* detail */
   .employee-detail__wrapper-item {
@@ -350,7 +352,11 @@ max-width:150px;
         font-size: 15px;
     } 
 }
-/* home */
+ 
+ 
+
+
+
 .nav-item .nav-link {
     position: relative;
     font-size: 1em;
@@ -576,13 +582,6 @@ max-width:150px;
     width: 100px;
 }
 
-
-
-
-/* content */
-
-/* main content */
-
 /* card1 */
 #btn2 button {
     width: 100px;
@@ -597,9 +596,7 @@ max-width:150px;
     background-color: rgba(238, 224, 208);
 }
 
-/* card1 */
-
-/* card2 */
+ 
 #tpc {
     box-shadow: 0 0 5px black;
     transition: 0.5s ease;
@@ -610,9 +607,7 @@ max-width:150px;
     transform: translateY(-10px);
 }
 
-/* card2 */
-
-/* card3 */
+ 
 #c p {
     font-weight: bold;
 }
@@ -701,7 +696,87 @@ max-width:150px;
     top: 80px;
     left: 1014px;
 }
-.bisteb{
-    color: #000;
-    text-decoration: none;
-}
+
+.custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+   .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+   .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  
+  .wrapper .form .inputfield .input:focus,
+  .wrapper .form .inputfield .textarea:focus,
+  .wrapper .form .inputfield .custom_select select:focus{
+    border: 1px solid #fec107;
+  }
+  
+   .btn{
+    width: 100%;
+     padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #8b846f;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+   .btn:hover{
+    background: #ffd658;
+  }
+  @media (max-width:420px) {
+    .wrapper .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrapper .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }
+  .btn{
+  margin-top: 20px;
+  }
+  #kisre{
+  color: black;
+  text-decoration: none
+  }
+
+
+
+  /* Css login /
+
+  
+
+ 
+
+ 
+ 
+ 
