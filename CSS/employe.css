@@ -255,7 +255,9 @@ table {
     border: 1px solid #d5dbd9;
     border-radius: 3px;
   }
-  
+  .cosstunsst{
+    margin-top: -98px;
+  }
 
   /* detail */
   .employee-detail__wrapper-item {
@@ -331,6 +333,8 @@ max-width:150px;
         font-size: 15px;
     } 
 }
+ 
+ 
 
 /* modal */
 .modal {
