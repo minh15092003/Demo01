@@ -7,6 +7,11 @@
     background: #ececec;
     padding: 0 20px 0 20px;
 }
+.wrapper-pw{
+    background: #ececec;
+    padding: 0 20px 0 20px;
+}
+
 .main{
     display: flex;
     justify-content: center;
@@ -20,6 +25,31 @@
     box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
     padding: 30px;
 }
+.row-pw{
+    width: 70%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+    padding: 5px;
+}
+.input-pw{
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-pw header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-pw .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+     
+}
+
 .side-image{
     background-image: url("https://images.pexels.com/photos/3201694/pexels-photo-3201694.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-position: center;
@@ -111,14 +141,9 @@ span a:hover{
 }
  
 /* password */
-.row-pw{
-    
-    width: 700px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
-    padding: 30px;
-}
+
+
+
 .lable-center{
     margin-bottom: 30px;
     margin-top: 30px;
@@ -313,6 +338,7 @@ max-width:150px;
     .row{
         width: 100%;
     }
+
     .row-crt{
         max-width: 420px;
         width: 150%;
@@ -333,10 +359,11 @@ max-width:150px;
 
 /* modal */
 .modal {
+    
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 0px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -346,7 +373,8 @@ max-width:150px;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   .close,
-  .closeEdit {
+  .closeEdit,
+  .closePassword {
     color: rgb(128, 23, 23);
     float: right;
     font-size: 28px;
@@ -355,8 +383,10 @@ max-width:150px;
   
   .close:hover,
   .close:focus,
-  .closeEdit:hover,
-  .close:focus {
+  
+  .closePassword:hover,
+  .closeEdit:hover
+   {
     color: #000; 
     text-decoration: none;
     cursor: pointer;
@@ -426,7 +456,7 @@ max-width:150px;
         width: 20px;
     }
     #name {
-       margin-left: -100px;
+       margin-left: -130px;
         margin-top: 3px;
     }
 }
@@ -456,137 +486,5 @@ max-width:150px;
         margin-left: 200px;
     }
 }
-/* main content */
-.main-content {
-    width: 100%;
-    height: 90vh;
-    background-image: url(/Img/20160406163621-anhminhhoa-2.jpg);
-    background-size: cover;
-    background-position: 70%;
-}
-.content {
-    margin-top: 150px;
-    margin-left: 60px;
-}
-#tpc {
-    box-shadow: 0 0 5px black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#tpc:hover {
-    transform: translateY(-10px);
-}
-/* footer */
-#footer {
-    width: 100%;
-    background-color: black;
-    margin-top: 100px;
-}
-
-#footer h1 {
-    color: white;
-    padding-top: 30px;
-}
-
-#footer p {
-    color: white;
-}
-.icons i {
-    color: rgba(238, 224, 208);
-    font-size: 30px;
-    cursor: pointer;
-}
-.copyright {
-    color: white;
-    margin-top: 20px;
-}
-.credite {
-    color: white;
-}
-#cd-ghestr {
-    height: 30vh;
-
-}
-#navbarNavDropdown {
-    margin-left: 5px;
-}
-#cutsten {
-    background-color: rgb(247, 247, 247);
-}
-
-#cd-contens {
-    height: 30vh;
-}
-.dsadasd li {
-    top: 80px;
-    left: 1014px;
-}
- 
- 
-.main-content {
-    width: 100%;
-    height: 90vh;
-    background-image: url(/Img/20160406163621-anhminhhoa-2.jpg);
-    background-size: cover;
-    background-position: 70%;
-}
-.content {
-    margin-top: 150px;
-    margin-left: 60px;
-}
-#tpc {
-    box-shadow: 0 0 5px black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#tpc:hover {
-    transform: translateY(-10px);
-}
-/* footer */
-#footer {
-    width: 100%;
-    background-color: black;
-    margin-top: 100px;
-}
-
-#footer h1 {
-    color: white;
-    padding-top: 30px;
-}
-
-#footer p {
-    color: white;
-}
-.icons i {
-    color: rgba(238, 224, 208);
-    font-size: 30px;
-    cursor: pointer;
-}
-.copyright {
-    color: white;
-    margin-top: 20px;
-}
-.credite {
-    color: white;
-}
-#cd-ghestr {
-    height: 30vh;
-
-}
-#navbarNavDropdown {
-    margin-left: 5px;
-}
-#cutsten {
-    background-color: rgb(247, 247, 247);
-}
-
-#cd-contens {
-    height: 30vh;
-}
-.dsadasd li {
-    top: 80px;
-    left: 1014px;
-}
-   
 
   
