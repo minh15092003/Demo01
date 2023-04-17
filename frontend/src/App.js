@@ -1,6 +1,11 @@
 import logo from './logo.svg';
+<<<<<<< HEAD
 import './App.css';
  
+=======
+
+import './App.css';
+>>>>>>> 168287bdd33004e3c37116857471c312d5c9b341
 function App() {
   return (
     <div className="App">
