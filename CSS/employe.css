@@ -1,4 +1,3 @@
- 
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -7,6 +6,11 @@
     background: #ececec;
     padding: 0 20px 0 20px;
 }
+.wrapper-pw{
+    background: #ececec;
+    padding: 0 20px 0 20px;
+}
+
 .main{
     display: flex;
     justify-content: center;
@@ -20,6 +24,31 @@
     box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
     padding: 30px;
 }
+.row-pw{
+    width: 70%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+    padding: 5px;
+}
+.input-pw{
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-pw header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-pw .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+     
+}
+
 .side-image{
     background-image: url("https://images.pexels.com/photos/3201694/pexels-photo-3201694.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-position: center;
@@ -111,14 +140,9 @@ span a:hover{
 }
  
 /* password */
-.row-pw{
-    
-    width: 700px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
-    padding: 30px;
-}
+
+
+
 .lable-center{
     margin-bottom: 30px;
     margin-top: 30px;
@@ -255,9 +279,7 @@ table {
     border: 1px solid #d5dbd9;
     border-radius: 3px;
   }
-  .cosstunsst{
-    margin-top: -98px;
-  }
+  
 
   /* detail */
   .employee-detail__wrapper-item {
@@ -293,68 +315,10 @@ max-width:150px;
     padding: 10px;
 }
 
-
- 
-
-/* modal */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  .close,
-  .closeEdit {
-    color: rgb(128, 23, 23);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus,
-  .closeEdit:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-* {
-    margin: 0;
-    padding: 0;
-}
-#name {
-    margin-left: -50px;
-     left: 90%;
-     margin-top: 3px;
- }
-/*Ipad ngang(1024 x 768)*/
-@media screen and (max-width: 1024px) {
-    .social-link i img {
-        width: 20px;
-    }
-    #name {
-       margin-left: -100px;
-        margin-top: 3px;
-    }
-}
-/*Ipad dọc(768 x 1024)*/
- 
 @media (max-width: 768px){
     .side-image{
         border-radius: 10px 10px 0 0;
         height: 200px;
-    }
-    .icons i img {
-        width: 20px;
-        text-align: center;
     }
     .logo{
         width: 35px;
@@ -373,6 +337,7 @@ max-width:150px;
     .row{
         width: 100%;
     }
+
     .row-crt{
         max-width: 420px;
         width: 150%;
@@ -390,23 +355,45 @@ max-width:150px;
         font-size: 15px;
     } 
 }
- 
-/*Tablet nhỏ(480 x 640)*/
-@media screen and (max-width: 280px) {
-    .content h1 {
-        font-size: 30px;
-    }
-    #btn3 button {
-        width: 70px;
-    }
-}
-/*Smart phone nhỏ*/
-@media screen and (max-width: 240px) {
-    .cuerta-rt {
-        width: 50px;
-        margin-left: 200px;
-    }
-}
+
+/* modal */
+.modal {
+    
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .close,
+  .closeEdit,
+  .closePassword {
+    color: rgb(128, 23, 23);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus,
+  
+  .closePassword:hover,
+  .closeEdit:hover
+   {
+    color: #000; 
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  /* home */
+  
 .main-content {
     width: 100%;
     height: 90vh;
@@ -414,19 +401,18 @@ max-width:150px;
     background-size: cover;
     background-position: 70%;
 }
-.content {
-    margin-top: 150px;
-    margin-left: 60px;
-}
 #tpc {
     box-shadow: 0 0 5px black;
     transition: 0.5s ease;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 #tpc:hover {
     transform: translateY(-10px);
 }
-/* footer */
+#cd-contens {
+    height: 30vh;
+}
 #footer {
     width: 100%;
     background-color: black;
@@ -446,31 +432,56 @@ max-width:150px;
     font-size: 30px;
     cursor: pointer;
 }
-.copyright {
-    color: white;
-    margin-top: 20px;
-}
-.credite {
-    color: white;
-}
-#cd-ghestr {
-    height: 30vh;
-
-}
-#navbarNavDropdown {
-    margin-left: 5px;
-}
-#cutsten {
-    background-color: rgb(247, 247, 247);
+.bisteb{
+    color: black;
+    text-decoration: none;
 }
 
-#cd-contens {
-    height: 30vh;
-}
-.dsadasd li {
-    top: 80px;
-    left: 1014px;
-}
-   
 
-  
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#name {
+    margin-left: -50px;
+     left: 90%;
+     margin-top: 3px;
+ }
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+    .social-link i img {
+        width: 20px;
+    }
+    #name {
+       margin-left: -130px;
+        margin-top: 3px;
+    }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+    .icons i img {
+        width: 20px;
+        text-align: center;
+    }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 30px;
+    }
+    #btn3 button {
+        width: 70px;
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 280px) {  
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px) {
+    .cuerta-rt {
+        width: 50px;
+        margin-left: 200px;
+    }
+}

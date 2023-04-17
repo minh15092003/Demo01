@@ -25,7 +25,7 @@ window.onclick = function(event) {
 
 
 
-
+// edit
 var modalEdit = document.getElementById("modal-edit");
 var btnEdit = document.getElementById("edit");
 var spanEdit = document.getElementsByClassName("closeEdit")[0];
@@ -41,4 +41,3 @@ btnEdit.onclick = function() {
     }
   }
   
-
