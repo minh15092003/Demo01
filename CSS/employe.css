@@ -255,9 +255,7 @@ table {
     border: 1px solid #d5dbd9;
     border-radius: 3px;
   }
-  .cosstunsst{
-    margin-top: -98px;
-  }
+  
 
   /* detail */
   .employee-detail__wrapper-item {
@@ -313,7 +311,7 @@ max-width:150px;
         font-size: 17px;
     }
     .row{
-        max-width: 800px;
+        max-width: 280px;
         width: 150%;
     }
     .row-crt{
@@ -333,8 +331,6 @@ max-width:150px;
         font-size: 15px;
     } 
 }
- 
- 
 
 /* modal */
 .modal {
@@ -362,7 +358,7 @@ max-width:150px;
   .close:focus,
   .closeEdit:hover,
   .close:focus {
-    color: #000;
+    color: #000; 
     text-decoration: none;
     cursor: pointer;
   }
