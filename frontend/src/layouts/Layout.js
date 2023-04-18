@@ -240,7 +240,7 @@ const Layout = () => {
           &copy; Copyright <strong><span>ARODA</span></strong>. All Rights Reserved
         </div>
         <div class="credite text-center">
-          Designed By <a href="#">SA Coding</a>
+          Designed By SA Coding
         </div>
       </footer>
 
