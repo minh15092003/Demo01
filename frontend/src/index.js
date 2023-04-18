@@ -5,16 +5,21 @@ import Home from "./pages/home/Homepage";
 import Personnel from "./pages/personnel/personnelPage";
 import NoPage from "./pages/not-found/not-FoundPage";
 import Login from "./pages/login/LoginPage";
+import Edit from "./components/editmodal"
+import Create from "./components/create"
 import './index.css';
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         < Route path="login" element={<Login />} />
+        < Route path="edit" element={<Edit />} />
+        < Route path="create" element={<Create />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="personnel" element={<Personnel />} />
         </Route>
+
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
