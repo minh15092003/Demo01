@@ -146,14 +146,13 @@ const Contact = () => {
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                                 <button class="btn btn-outline-success" type="submit">Search</button>
                             </form>
-
                         </div>
                     </nav>
                     {/* style="overflow-x:auto;" */}
-                    <div>
-                        <table class="table" >
+                    <div >
+                        <table class="table"  >
                             <thead>
-                                <tr className="djhfhjds">
+                                <tr className="hrytrt-tro">
                                     <th scope="col">stt</th>
                                     <th scope="col">Tên nhân viên</th>
                                     <th scope="col">Số điện thoại</th>
