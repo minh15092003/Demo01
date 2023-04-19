@@ -1,10 +1,7 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
-import ChangePassWordModal from "../components/changePassWordModal"
-var isShowChangePassWord = false;
-function ShowChangePassWord() {
-  isShowChangePassWord = true;
-}
+import ChangePassWordModal from "../components/ChangePassWordModal"
+
 const Layout = () => {
 
   return (
