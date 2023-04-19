@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
-import ChangePassWordModal from "./components/ChangePassWordModal"
+import ChangePassWordModal from "../components/ChangePassWordModal"
 
 const Layout = () => {
 
