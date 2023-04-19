@@ -26,7 +26,14 @@
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
   padding: 30px;
 }
+.row-edit{
+  width: 55%;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  padding: 30px;
 
+}
 .row-pw {
   width: 70%;
   border-radius: 10px;
