@@ -128,7 +128,6 @@ const ChangePassWordModal = () => {
                             <input value={codeEmploye} onChange={(e) => { setcode(e.target.value) }} type="text" class="input" id="" required />
                             <label for="">Mã nhân viên</label>
                         </div>
-
                         <div class="input-field">
                             <button type="submit" onClick={fixpage} class="submit"> Xác Nhận </button>
                         </div>
