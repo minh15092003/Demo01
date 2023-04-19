@@ -1,8 +1,10 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
+import ChangePassWordModal from "./components/ChangePassWordModal"
 
- 
 const Layout = () => {
+
+
   return (
     <>
       <div class="cd-container">
@@ -48,9 +50,9 @@ const Layout = () => {
             </div>
             <div>
               <lable type="button" class="btn-td btn-danger " data-bs-toggle="dropdown" aria-expanded="false"
-                id="cutsten">
-                  <div className="minh">
-                  <div class="metseg-hetage">
+                id="cutsten" />
+              <div className="minh">
+                <div class="metseg-hetage">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="22"><path d="M12 1c3.681 0 7 2.565 7 6v4.539c0 .642.189 1.269.545 1.803l2.2 3.298A1.517 1.517 0 0 1 20.482 19H15.5a3.5 3.5 0 1 1-7 0H3.519a1.518 1.518 0 0 1-1.265-2.359l2.2-3.299A3.25 3.25 0 0 0 5 11.539V7c0-3.435 3.318-6 7-6ZM6.5 7v4.539a4.75 4.75 0 0 1-.797 2.635l-2.2 3.298-.003.01.001.007.004.006.006.004.007.001h16.964l.007-.001.006-.004.004-.006.001-.006a.017.017 0 0 0-.003-.01l-2.199-3.299a4.753 4.753 0 0 1-.798-2.635V7c0-2.364-2.383-4.5-5.5-4.5S6.5 4.636 6.5 7ZM14 19h-4a2 2 0 1 0 4 0Z"></path></svg>
                   <svg xmlns="http://www.w3.org/2000/svg" class="juste" viewBox="0 0 24 24" width="24"
                     id="cutsten" height="24">
@@ -60,47 +62,21 @@ const Layout = () => {
                     </path>
                   </svg>
                 </div>
-                  </div>
-              </lable>
-              <ul class="dropdown-menu" id="name">
-                <div class="name">
-                  <div class="dsadasd">
-                    <li><a class="dropdown-item" href="#">Tài Khoản</a></li>
-                    <button id="changePassword" class="dropdown-item"> Đổi mật khẩu</button>
-                  </div>
-                </div>
-              </ul>
-            </div>
 
-            <div id="modal-password" class="modal">
-                    <div class="container main">
-                        <div class="row-pw ">
-                            <div class="input-pw">
-                                <span class="closePassword">&times;</span>
-                                <h1 class="lable-center">Đổi mật khẩu</h1>
-                                <div class="input-field">
-                                    <input type="" class="input" id="password" required/>
-                                    <label for="password">Nhập lại mật khẩu cũ</label>
-                                </div>
-                                <div class="input-field">
-                                    <input type="" class="input" id="newpassword" required/>
-                                    <label for="password">Nhập mật khẩu mới </label>
-                                </div>
-                                <div class="input-field">
-                                    <input type="" class="input" id="newpassword" required/>
-                                    <label for="password">Nhập lại mật khẩu mới</label>
-                                </div>
-                                <div class="input-field">
-                                    <button type="submit" class="submit">Xác Nhận</button>
-                                </div>
-                            </div>
-                        </div>
+                <ul className="dropdown-menu" id="name">
+                  <div className="name">
+                    <div className="dsadasd">
+                      <li className="dropdown-item">Tài Khoản</li>
+                      <button id="changePassword" className="dropdown-item">Đổi mật khẩu</button>
                     </div>
-                </div>
-          </div>
+                  </div>
+                </ul>
+              </div>
+              <ChangePassWordModal />
+
+            </div>
+            </div>
         </nav>
-
-
       </div>
       <Outlet />
       <footer id="footer">
@@ -117,11 +93,10 @@ const Layout = () => {
           &copy; Copyright <strong><span>ARODA</span></strong>. All Rights Reserved
         </div>
         <div class="credite text-center">
-          Designed By <a href="#">SA Coding</a>
+          Designed By SA Coding
         </div>
       </footer>
-      
- 
+
     </>
   )
 };
