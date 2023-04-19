@@ -1,43 +1,59 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+const PersonnelPage = () => {
+    const [users, setUsers] = useState([]);
+    //console.log(users)
 
+    function deletepage(user_id) {
 
+        axios.delete('http://localhost:3000/delete?user_id=' + user_id)
 
-// var modal = document.getElementById("myModal");
-// // Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-// // When the user clicks the button, open the modal 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-// // edit
-// var modalEdit = document.getElementById("modal-edit");
-// var btnEdit = document.getElementById("edit");
-// var spanEdit = document.getElementsByClassName("closeEdit")[0];
-// btnEdit.onclick = function() {
-//     modalEdit.style.display = "block";
-//   }
-//   spanEdit.onclick = function() {
-//     modalEdit.style.display = "none";
-//   }
-//   window.onclick = function(event) {
-//     if (event.target == modalEdit) {
-//       modalEdit.style.display = "none";
-//     }
-//   }
-  
-const Contact = () => {
+            .then(response => {
+                window.location.reload()
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+    function getlist() {
+        axios.get('http://localhost:3000/Personnel')
+            .then(response => {
+                setUsers(response.data.data)
+
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+    useEffect(() => { getlist(); }, [])
+    function handel(query) {
+        window.location = `./edit?user_id=${query}`;
+        //console.log(query)
+    }
+    function detailEmployee(detailEmployee) {
+        window.location = `./detailsPage?user_id=${detailEmployee}`
+    }
+
+    //new list
+    var listUser = [];
+    for (let index = 0; index < users.length; index++) {
+        var element = users[index];
+        //console.log(element.username)
+
+        var data = {
+            fullname: element.fullname,
+            phone: element.phone,
+            email: element.email,
+            access_group: element.access_group,
+            region: element.region,
+            branch: element.branch,
+            department: element.department,
+            title: element.title,
+            codeEmploye: element.codeEmploye,
+        }
+        listUser.push(data)
+    }
+
     return <div>
 
         <div class="">
@@ -52,93 +68,20 @@ const Contact = () => {
                         Xuất file
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Thông tin cơ bản</a></li>
-                        <li><a class="dropdown-item" href="#">Tiền lương/Trợ cấp</a></li>
-                        <li><a class="dropdown-item" href="#">Lịch sử thăng tiến</a></li>
+                        <li><a class="dropdown-item" href="/#">Thông tin cơ bản</a></li>
+                        <li><a class="dropdown-item" href="/#">Tiền lương/Trợ cấp</a></li>
+                        <li><a class="dropdown-item" href="/#">Lịch sử thăng tiến</a></li>
                     </ul>
                     <button type="button" class="btn-import btn-danger dropdown-toggle" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Tạo mới
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a id="myBtn" class="dropdown-item" >Thêm nhân viên</a></li>
-                        <li><a class="dropdown-item" type="file">Thêm file excel</a></li>
+                        <li class="dropdown-item"><a href='/create'>Thêm nhân viên</a></li>
+                        <li class="dropdown-item">Thêm file excel</li>
                     </ul>
                 </div>
-                <div id="myModal" class="modal">
 
-                    <div class="container main">
-                        <div class="row ">
-                            <div class="input-box">
-
-                                <span class="close">&times;</span>
-                                <h1 class="lable-center">Create</h1>
-
-                                <div class="input-field">
-
-                                    <input type="text" class="input" id="fullname" required />
-                                    <label for="fullname">Họ và tên</label>
-                                </div>
-
-                                <div class="input-field">
-
-                                    <input type="tel" class="input" id="tel" required />
-                                    <label for="tel">Số điện thoại</label>
-                                </div>
-
-                                <div class="input-field">
-
-                                    <input type="email" class="input" id="email" required />
-                                    <label for="email">Email</label>
-                                </div>
-                                <div class="input-field">
-                                    <input type="text" class="input" required />
-                                    <label>Nhóm truy cập</label>
-
-                                </div>
-                                <details>
-                                    <summary>mở rộng</summary>
-                                    <div class="input-field">
-                                        <input type="text" class="input" required />
-
-                                        <label>Vùng</label>
-
-
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Chi nhánh</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Phòng ban</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Chức danh</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Mã nhân viên</label>
-                                    </div>
-
-
-                                </details>
-                                <div class="input-field">
-                                    <button type="submit" class="submit" /> Thêm
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
                 <div>
                     <nav class="navbar navbar-light ">
                         <div class="container-fluid">
@@ -167,127 +110,35 @@ const Contact = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>
-                                        <a class="bisteb" href="/details"> demo</a>
-                                    </td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>
-                                        <lable type="button" class="btn-td btn-danger " data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            ...
-                                        </lable>
-                                        <ul class="dropdown-menu">
+                                {users.map((user, index) => (
+                                    <tr>
+                                        <th >{index + 1}</th>
+                                        <td onClick={() => { detailEmployee(user.user_id) }}>{user.fullname}</td>
+                                        <td >{user.phone} </td>
+                                        <td >{user.email}</td>
+                                        <td >{user.access_group}</td>
+                                        <td >{user.region}</td>
+                                        <td >{user.branch}</td>
+                                        <td >{user.department}</td>
+                                        <td >{user.title}</td>
+                                        <td >{user.codeEmploye}</td>
+                                        <td>
+                                            <lable type="button" class="btn-td btn-danger " data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                ...
+                                            </lable>
+                                            <ul class="dropdown-menu">
 
-                                            <li><button id="myBtn" class="dropdown-item">Sửa</button></li>
-                                            <li><button class="dropdown-item">Xoá</button></li>
+                                                <li><button id="myBtn" class="dropdown-item" onClick={() => { handel(user.user_id) }}>Sửa</button></li>
+                                                <li><button class="dropdown-item" onClick={() => { deletepage(user.user_id) }}>Xoá</button></li>
 
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>demo</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>null</td>
-                                    <td>
-                                        <lable type="button" class="btn-td btn-danger " data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            ...
-                                        </lable>
-                                        <ul class="dropdown-menu">
-                                            <li><button id="edit" class="dropdown-item">Sửa</button></li>
-                                            <li><button id="myBtn" class="dropdown-item">Xoá</button></li>
-                                        </ul>
-                                    </td>
-                                </tr>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                ))}
                             </tbody>
                         </table>
-
-                    </div>
-
-
-
-                    <div id="modal-edit" class="modal">
-                        <div class="container main">
-                            <div class="row ">
-                                <div class="input-box">
-                                    <span class="closeEdit">&times;</span>
-                                    <h1 class="lable-center">Sửa thông tin nhân viên</h1>
-
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="fullname" required />
-                                        <label for="fullname">Họ và tên</label>
-                                    </div>
-
-                                    <div class="input-field">
-
-                                        <input type="tel" class="input" id="tel" required />
-                                        <label for="tel">Số điện thoại</label>
-                                    </div>
-
-                                    <div class="input-field">
-
-                                        <input type="email" class="input" id="email" required />
-                                        <label for="email">Email</label>
-                                    </div>
-                                    <div class="input-field">
-                                        <input type="text" class="input" required />
-                                        <label>Nhóm truy cập</label>
-
-                                    </div>
-
-                                    <div class="input-field">
-                                        <input type="text" class="input" required />
-
-                                        <label>Vùng</label>
-
-
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Chi nhánh</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Phòng ban</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Chức danh</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Mã nhân viên</label>
-                                    </div>
-
-                                    <div class="input-field">
-                                        <button type="submit" class="submit" /> Xác Nhận
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
 
                     </div>
                 </div>
@@ -295,4 +146,4 @@ const Contact = () => {
         </div>
     </div>
 };
-export default Contact;
+export default PersonnelPage;
