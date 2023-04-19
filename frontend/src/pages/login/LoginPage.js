@@ -1,9 +1,7 @@
 import React,{useState} from 'react'
 import axios from 'axios';
 
-
 const Login = () => {
- 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     function handlelogin() {
@@ -35,7 +33,6 @@ const Login = () => {
             <div class="row">
                 <div class="col-md-6 side-image">
                     <div class="text">
-                        <p>Join the community of developers </p>
                     </div>
                 </div>
                 <div class="col-md-6 right">
@@ -54,7 +51,6 @@ const Login = () => {
                         <div class="input-field">
                             <button onClick={handlelogin} type="submit" class="submit" >Đăng Nhập</button>
                         </div>
-                        
                         <div class="signin">
                             <span>Bạn có muốn tạo tài khoản mới? <a href="#">Quên mật khẩu </a></span>
                         </div>

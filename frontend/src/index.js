@@ -1,6 +1,8 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
+
+ 
 import Home from "./pages/home/Homepage";
 import Personnel from "./pages/personnel/personnelPage";
 import Details from "./pages/details/DetailsPage"
@@ -19,7 +21,7 @@ export default function App() {
           <Route  path="home" element={<Home />} />
           <Route path="personnel" element={<Personnel />} />
           < Route path="details" element={<Details />} />
-
+        
         </Route>
         <Route path="*" element={<NoPage />} />
       </Routes>
