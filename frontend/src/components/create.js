@@ -2,7 +2,7 @@ const ChangePassWordModal = () => {
     return (
         <div id="modal-password" class="modal">
             <div class="container main">
-            <div class="row ">
+            <div class="row-edit ">
                 <div class="input-box">
 
                     <h1 class="lable-center">Create</h1>

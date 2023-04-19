@@ -3,7 +3,7 @@ const ChangePassWordModal = () => {
         <div class="wrapper ">
         <div >
             <div class="container main">
-                <div class="row ">
+                <div class="row-edit ">
                     <div class="input-box">
 
                         <h1 class="lable-center">Sửa thông tin nhân viên</h1>
