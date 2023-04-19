@@ -65,7 +65,7 @@ const Layout = () => {
               <ul class="dropdown-menu" id="name">
                 <div class="name">
                   <div class="dsadasd">
-                    <li><a class="dropdown-item" href="#">Tài Khoản</a></li>
+                    <li><a class="dropdown-item" href="/#">Tài Khoản</a></li>
                     <button id="changePassword" class="dropdown-item"   > Đổi mật khẩu</button>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const Layout = () => {
           &copy; Copyright <strong><span>ARODA</span></strong>. All Rights Reserved
         </div>
         <div class="credite text-center">
-          Designed By <a href="#">SA Coding</a>
+          Designed By <a href="/#">SA Coding</a>
         </div>
       </footer>
 
