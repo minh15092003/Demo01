@@ -1,6 +1,5 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
-import ChangePassWordModal from "../components/ChangePassWordModal"
 
 const Layout = () => {
 
@@ -67,7 +66,7 @@ const Layout = () => {
                 <div class="name">
                   <div class="dsadasd">
                     <li><a class="dropdown-item" href="#">Tài Khoản</a></li>
-                    <button id="changePassword" class="dropdown-item" onClick={ShowChangePassWord}  > Đổi mật khẩu</button>
+                    <button id="changePassword" class="dropdown-item"   > Đổi mật khẩu</button>
                   </div>
                 </div>
               </ul>
