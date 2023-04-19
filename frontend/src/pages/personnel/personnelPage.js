@@ -1,45 +1,8 @@
 import React from 'react';
 
 
-
-// var modal = document.getElementById("myModal");
-// // Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-// // When the user clicks the button, open the modal 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-// // edit
-// var modalEdit = document.getElementById("modal-edit");
-// var btnEdit = document.getElementById("edit");
-// var spanEdit = document.getElementsByClassName("closeEdit")[0];
-// btnEdit.onclick = function() {
-//     modalEdit.style.display = "block";
-//   }
-//   spanEdit.onclick = function() {
-//     modalEdit.style.display = "none";
-//   }
-//   window.onclick = function(event) {
-//     if (event.target == modalEdit) {
-//       modalEdit.style.display = "none";
-//     }
-//   }
-  
 const Contact = () => {
     return <div>
-
         <div class="">
             <div class="utils__content">
                 <div class="lable">
@@ -67,77 +30,7 @@ const Contact = () => {
                 </div>
                 <div id="myModal" class="modal">
 
-                    <div class="container main">
-                        <div class="row ">
-                            <div class="input-box">
-
-                                <span class="close">&times;</span>
-                                <h1 class="lable-center">Create</h1>
-
-                                <div class="input-field">
-
-                                    <input type="text" class="input" id="fullname" required />
-                                    <label for="fullname">Họ và tên</label>
-                                </div>
-
-                                <div class="input-field">
-
-                                    <input type="tel" class="input" id="tel" required />
-                                    <label for="tel">Số điện thoại</label>
-                                </div>
-
-                                <div class="input-field">
-
-                                    <input type="email" class="input" id="email" required />
-                                    <label for="email">Email</label>
-                                </div>
-                                <div class="input-field">
-                                    <input type="text" class="input" required />
-                                    <label>Nhóm truy cập</label>
-
-                                </div>
-                                <details>
-                                    <summary>mở rộng</summary>
-                                    <div class="input-field">
-                                        <input type="text" class="input" required />
-
-                                        <label>Vùng</label>
-
-
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Chi nhánh</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Phòng ban</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Chức danh</label>
-                                    </div>
-                                    <div class="input-field">
-
-                                        <input type="text" class="input" id="" required />
-                                        <label for="">Mã nhân viên</label>
-                                    </div>
-
-
-                                </details>
-                                <div class="input-field">
-                                    <button type="submit" class="submit" /> Thêm
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
+                
                 </div>
                 <div>
                     <nav class="navbar navbar-light ">

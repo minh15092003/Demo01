@@ -58,9 +58,6 @@ const ChangePassWordModal = () => {
                             <input type="text" class="input" id="" required />
                             <label for="">Mã nhân viên</label>
                         </div>
-
-
-
                         <div class="input-field">
                             <button type="submit" class="submit"> Xác Nhận </button>
                         </div>
