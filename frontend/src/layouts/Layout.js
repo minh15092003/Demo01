@@ -1,9 +1,41 @@
-import React from 'react';
+import imgg from '../pages/Img/z4280456184289_e2c428ac84b5575cfaf1e0972c8a6011.png'
 import { Outlet, Link } from "react-router-dom";
- 
-
+import axios from 'axios';
+import React, { useState } from 'react'
 const Layout = () => {
 
+  const [password, setPassword] = useState("");
+  const [newpassword, setnewpassword] = useState("");
+  const [enterpassword, setenterpassword] = useState("");
+
+  function HandleChangePassword() {
+
+    let user = JSON.parse(window.localStorage.getItem("user"));
+    let userid = user.userid
+    axios.put('http://localhost:3000/Password', {
+      userid: userid,
+      password: password,
+      newpassword: newpassword,
+      enterpassword: enterpassword
+    })
+      .then(res => {
+        alert(res.data.message)
+        console.log(res);
+        window.location.href = "/login";
+      })
+      .catch(error => {
+        alert(error.response.data.message)
+        console.log(error);
+      }
+      )
+  };
+
+  function next() {
+    window.location = "http://localhost:3001/home"
+  }
+  function Next() {
+    window.location = "http://localhost:3001/home"
+  }
   return (
     <>
       <div class="cd-container">
@@ -66,8 +98,8 @@ const Layout = () => {
               <ul class="dropdown-menu" id="name">
                 <div class="name">
                   <div class="dsadasd">
-                    <li><a class="dropdown-item" href="/#">Tài Khoản</a></li>
-                    <button id="changePassword" class="dropdown-item"   > Đổi mật khẩu</button>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" href="#exampleModalTogle">Tài Khoản</a></li>
+                    <button id="changePassword" class="dropdown-item" data-bs-toggle="modal" href="#exampleModalToggle" role="button" > Đổi mật khẩu</button>
                   </div>
                 </div>
               </ul>
@@ -81,7 +113,7 @@ const Layout = () => {
       </div >
       <Outlet />
       <footer id="footer">
-        <h1 class="text-center">ARODA</h1>
+        <h1 class="text-center">Arum</h1>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ab?</p>
         <div class="icons text-center">
           <i class="bx bxl-twitter"></i>
@@ -98,7 +130,74 @@ const Layout = () => {
         </div>
       </footer>
 
+      {/* Model Đổi mk     */}
+      <div>
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="input-pw">
+      
+           
+                        <div class="input-field">
+                            <input value={password} onChange={(a) => { setPassword(a.target.value) }} type="" class="input" id="password" required />
+                            <label for="password">Nhập lại mật khẩu cũ</label>
+                        </div>
+                        <div class="input-field">
+                            <input value={newpassword} onChange={(a) => { setnewpassword(a.target.value) }} type="" class="input" id="newpassword" required />
+                            <label for="password">Nhập mật khẩu mới </label>
+                        </div>
+                        <div class="input-field">
+                            <input value={enterpassword} onChange={(a) => { setenterpassword(a.target.value) }} type="" class="input" id="newpassword" required />
+                            <label for="password">Nhập lại mật khẩu mới</label>
+                        </div>
+                        <div class="input-field">
+                            <button onClick={HandleChangePassword} type="submit" class="submit">Xác Nhận</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      {/* User profile */}
+      <div>
+        <div class="modal fade" id="exampleModalTogle" aria-hidden="true" aria-labelledby="exampleModalToggleLabell"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content" id='concho'>
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                  <div class="hero">
+                    <nav>
+                      <a href="#" class="logo" id="nghedo" >Tài khoản</a>
+                    </nav>
+                  
+                    <div class="content">
+                      <div class="div-text">
+                        <h1>Tạ Văn Minh</h1>
+                        <h4>Số điện thoại : 0392458258</h4>
+                        <h4>Email : minhtv123@gmail.com</h4>
+                        <h4>Chức vụ : Quản lý</h4>
+                      </div>
+                      <div class="div-img">
+                        <img src={imgg} alt="" />
+                      </div>
+                    </div>
+                  </div>
+         
+              
+            </div>
+          </div>
+        </div>
 
+      </div>
     </>
   )
 };

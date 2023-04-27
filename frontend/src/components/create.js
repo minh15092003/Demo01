@@ -40,10 +40,16 @@ const Create = () => {
             }
             )
     };
+
+    function backlai(){
+        window.location = "http://localhost:3001/personnel"
+    }
+   
     return (
         <div id="modal-password" class="modal">
             <div class="container main">
                 <div class="row-edit ">
+                <span class="close" onClick={backlai} >&times;</span>
                     <div class="input-box">
                         <h1 class="lable-center">Create</h1>
                         <div class="input-field">
@@ -63,8 +69,7 @@ const Create = () => {
                             <input value={email} onChange={(a) => { setEmail(a.target.value) }} type="email" class="input" id="email" required />
                             <label for="email">Email</label>
                         </div>
-                        <details>
-                            <summary>mở rộng</summary>
+                      
                             <div class="input-field">
                                 <input value={workingroom} onChange={(a) => { setWorkingroom(a.target.value) }} type="text" class="input" required />
 
@@ -90,7 +95,7 @@ const Create = () => {
                                 <input value={numbercccd} onChange={(a) => { setNumbercccd(a.target.value) }} type="text" class="input" id="" required />
                                 <label for="">Số CCCD</label>
                             </div>
-                        </details>
+                        
                         <div class="input-field">
                             <button type="submit" class="submit" onClick={handetaomoi} > Tạo Mới</button>
                         </div>
